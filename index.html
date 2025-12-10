@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OurHeritageArchive</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <!-- <img class="img" src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@2x.png"> -->
+        <h1>Our Heritage Archive</h1>
+        <label>Search</label>
+        <input id="Search">
+        <button id="Searchbutton" class="btn">submit</button>
+        <!-- <button class="btn"> Share a traditional practice! </button> -->
+
+        <!-- <a href="index2.html">
+        <div class='sshare'>
+            <button id="share">Share a traditional practice!</button>
+        </div>
+    </a> -->
+        <hr>
+        
+        <!-- <div class= 'dropdown'>
+            <button>Make a post!</button>
+            <div class='content'>
+                <p>test</p>
+
+
+
+            </div>
+        </div> -->
+
+        
+            <div class="three-column">
+                <div class="left-form">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Jynxzi_ohnePixel_2025_01.png" alt="Left Image">
+                </div>
+                <div class="center-form">
+            <h2>Share a traditional practice!</h2>
+            <div class="divmain">
+                <div class="mid">
+                    <label>Image/ShortVideo URL</label>
+                    <input id="URL" class="input">
+                </div>
+                
+                <br>
+                <div class="mid">
+                    <label>Title</label>
+                    <input id="Title" class="input">
+                </div>
+                <br>
+                <div class="mid">
+                    <label>Country of Origin</label>
+                    <select class="form-select" autocomplete="country" id="Country" name="country">
+                        <option>Select Country</option>
+                        <optgroup label="Asia">
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Azerbaijan">Azerbaijan</option>
+                            <option value="Bahrain">Bahrain</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="Brunei Darussalam">Brunei Darussalam</option>
+                            <option value="Cambodia">Cambodia</option>
+                            <option value="China">China</option>
+                            <option value="Cyprus">Cyprus</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="India">India</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Iran">Iran</option>
+                            <option value="Iraq">Iraq</option>
+                            <option value="Israel">Israel</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Jordan">Jordan</option>
+                            <option value="Kazakhstan">Kazakhstan</option>
+                            <option value="Korea, North">Korea, North</option>
+                            <option value="Korea, South">Korea, South</option>
+                            <option value="Kuwait">Kuwait</option>
+                            <option value="Kyrgyzstan">Kyrgyzstan</option>
+                            <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                            <option value="Lebanon">Lebanon</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="Maldives">Maldives</option>
+                            <option value="Mongolia">Mongolia</option>
+                            <option value="Myanmar (Burma)">Myanmar (Burma)</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="Oman">Oman</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Philippines">Philippines</option>
+                            <option value="Qatar">Qatar</option>
+                            <option value="Russian Federation">Russian Federation</option>
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="Syria">Syria</option>
+                            <option value="Taiwan">Taiwan</option>
+                            <option value="Tajikistan">Tajikistan</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Timor-Leste">Timor-Leste</option>
+                            <option value="Turkey (Türkiye)">Turkey (Türkiye)</option>
+                            <option value="Turkmenistan">Turkmenistan</option>
+                            <option value="United Arab Emirates">United Arab Emirates</option>
+                            <option value="Uzbekistan">Uzbekistan</option>
+                            <option value="Vietnam">Vietnam</option>
+                            <option value="Yemen">Yemen</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option value="Albania">Albania</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Belarus">Belarus</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Croatia">Croatia</option>
+                            <option value="Czech Republic">Czech Republic</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Finland">Finland</option>
+                            <option value="France">France</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Hungary">Hungary</option>
+                            <option value="Iceland">Iceland</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Latvia">Latvia</option>
+                            <option value="Liechtenstein">Liechtenstein</option>
+                            <option value="Lithuania">Lithuania</option>
+                            <option value="Luxembourg">Luxembourg</option>
+                            <option value="Macedonia North">Macedonia North</option>
+                            <option value="Malta">Malta</option>
+                            <option value="Moldova">Moldova</option>
+                            <option value="Monaco">Monaco</option>
+                            <option value="Montenegro">Montenegro</option>
+                            <option value="Netherlands">Netherlands</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Romania">Romania</option>
+                            <option value="San Marino">San Marino</option>
+                            <option value="Serbia">Serbia</option>
+                            <option value="Slovakia">Slovakia</option>
+                            <option value="Slovenia">Slovenia</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Vatican City Holy See">Vatican City Holy See</option>
+                        </optgroup>
+                        <optgroup label="Africa">
+                            <option value="Algeria">Algeria</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Benin">Benin</option>
+                            <option value="Botswana">Botswana</option>
+                            <option value="Burkina Faso">Burkina Faso</option>
+                            <option value="Burundi">Burundi</option>
+                            <option value="Cabo Verde">Cabo Verde</option>
+                            <option value="Cameroon">Cameroon</option>
+                            <option value="Central African Republic">Central African Republic</option>
+                            <option value="Chad">Chad</option>
+                            <option value="Comoros">Comoros</option>
+                            <option value="Congo">Congo</option>
+                            <option value="Congo, Democratic Republic of the">Congo, Democratic Republic of the</option>
+                            <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                            <option value="Djibouti">Djibouti</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="Equatorial Guinea">Equatorial Guinea</option>
+                            <option value="Eritrea">Eritrea</option>
+                            <option value="Eswatini (Swaziland)">Eswatini (Swaziland)</option>
+                            <option value="Ethiopia">Ethiopia</option>
+                            <option value="Gabon">Gabon</option>
+                            <option value="Gambia">Gambia</option>
+                            <option value="Ghana">Ghana</option>
+                            <option value="Guinea">Guinea</option>
+                            <option value="Guinea-Bissau">Guinea-Bissau</option>
+                            <option value="Kenya">Kenya</option>
+                            <option value="Lesotho">Lesotho</option>
+                            <option value="Liberia">Liberia</option>
+                            <option value="Libya">Libya</option>
+                            <option value="Madagascar">Madagascar</option>
+                            <option value="Malawi">Malawi</option>
+                            <option value="Mali">Mali</option>
+                            <option value="Mauritania">Mauritania</option>
+                            <option value="Mauritius">Mauritius</option>
+                            <option value="Morocco">Morocco</option>
+                            <option value="Mozambique">Mozambique</option>
+                            <option value="Namibia">Namibia</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Nigeria">Nigeria</option>
+                            <option value="Rwanda">Rwanda</option>
+                            <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                            <option value="Senegal">Senegal</option>
+                            <option value="Seychelles">Seychelles</option>
+                            <option value="Sierra Leone">Sierra Leone</option>
+                            <option value="Somalia">Somalia</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="South Sudan">South Sudan</option>
+                            <option value="Sudan">Sudan</option>
+                            <option value="Tanzania">Tanzania</option>
+                            <option value="Togo">Togo</option>
+                            <option value="Tunisia">Tunisia</option>
+                            <option value="Uganda">Uganda</option>
+                            <option value="Zambia">Zambia</option>
+                            <option value="Zimbabwe">Zimbabwe</option>
+                        </optgroup>
+                        <optgroup label="North America">
+                            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                            <option value="Bahamas">Bahamas</option>
+                            <option value="Barbados">Barbados</option>
+                            <option value="Belize">Belize</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Costa Rica">Costa Rica</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Dominica">Dominica</option>
+                            <option value="Dominican Republic">Dominican Republic</option>
+                            <option value="El Salvador">El Salvador</option>
+                            <option value="Grenada">Grenada</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Haiti">Haiti</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Jamaica">Jamaica</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Nicaragua">Nicaragua</option>
+                            <option value="Panama">Panama</option>
+                            <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                            <option value="Saint Lucia">Saint Lucia</option>
+                            <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                            <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                            <option value="United States">United States</option>
+                        </optgroup>
+                        <optgroup label="South America">
+                            <option value="Argentina">Argentina</option>
+                            <option value="Bolivia (Plurinational State of)">Bolivia (Plurinational State of)</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Guyana">Guyana</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Suriname">Suriname</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Venezuela">Venezuela</option>
+                        </optgroup>
+                        <optgroup label="Australia (Oceania)">
+                            <option value="Australia">Australia</option>
+                            <option value="Fiji">Fiji</option>
+                            <option value="Kiribati">Kiribati</option>
+                            <option value="Marshall Islands">Marshall Islands</option>
+                            <option value="Micronesia">Micronesia</option>
+                            <option value="Nauru">Nauru</option>
+                            <option value="New Zealand">New Zealand</option>
+                            <option value="Palau">Palau</option>
+                            <option value="Papua New Guinea">Papua New Guinea</option>
+                            <option value="Samoa">Samoa</option>
+                            <option value="Solomon Islands">Solomon Islands</option>
+                            <option value="Tonga">Tonga</option>
+                            <option value="Tuvalu">Tuvalu</option>
+                            <option value="Vanuatu">Vanuatu</option>
+                        </optgroup>
+                    </select>    
+                </div>
+                <br>
+                <div class="mid">
+                    <label> Description & Fun Facts</label>
+                    <textarea id="desc" class="input" style="height: 100px; width: 400px; padding: 12px; box-sizing: border-box;"></textarea>
+                </div>
+            </div>
+            <br>
+            
+            <button id="Postbutton" class="btn">submit</button>
+             </div>
+             <div class="right-form">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Jynxzi_ohnePixel_2025_01.png" alt="Right Image">
+             </div>
+            </div>
+            <hr>
+            
+        <h2>Explore traditions all over the world!</h2> 
+        <button id="Refresh" class="btn">Refresh</button>
+        <br> <br>
+
+        <!--first table-->
+        <table>
+            <tr>
+                <img class="mediaclass" id="imageid1" height="500px" src="">
+                <video class="mediaclass" id="videoid1" height="500px" src="" style="display: none;" controls autoplay></video>
+            </tr>
+            <tr>
+                <h2 class="titleclass" id="table1title"></h2>
+                <h3 class="countryclass" id="table1country"></h3>
+                <p class="paraclass" id="table1para"></p>
+            </tr>
+            <hr class="lineclass">
+        </table>
+
+        <!--second table-->
+        <table>
+            <tr>
+                <img class="mediaclass" id="imageid2" height="500px" src="">
+                <video class="mediaclass" id="videoid2" height="500px" src="" style="display: none;" controls autoplay></video>
+            </tr>
+            <tr>
+                <h2 class="titleclass" id="table2title"></h2>
+                <h3 class="countryclass" id="table2country"></h3>
+                <p class="paraclass" id="table2para"></p>
+            </tr>
+            <hr class="lineclass">
+        </table>
+
+        <!--third table-->
+        <table>
+            <tr>
+                <img class="mediaclass" id="imageid3" height="500px" src="">
+                <video class="mediaclass" id="videoid3" height="500px" src="" style="display: none;" controls autoplay></video>
+            </tr>
+            <tr>
+                <h2 class="titleclass" id="table3title"></h2>
+                <h3 class="countryclass" id="table3country"></h3>
+                <p class="paraclass" id="table3para"></p>
+            </tr>
+            <hr class="lineclass">
+        </table>
+
+        <!--four table-->
+        <table>
+            <tr>
+                <img class="mediaclass" id="imageid4" height="500px" src="">
+                <video class="mediaclass" id="videoid4" height="500px" src="" style="display: none;" controls autoplay></video>
+            </tr>
+            <tr>
+                <h2 class="titleclass" id="table4title"></h2>
+                <h3 class="countryclass" id="table4country"></h3>
+                <p class="paraclass" id="table4para"></p>
+            </tr>
+            <hr class="lineclass">
+        </table>
+
+        <!--five table-->
+        <table>
+            <tr>
+                <img class="mediaclass" id="imageid5" height="500px" src="">
+                <video class="mediaclass" id="videoid5" height="500px" src="" style="display: none;" controls autoplay></video>
+            </tr>
+            <tr>
+                <h2 class="titleclass" id="table5title"></h2>
+                <h3 class="countryclass" id="table5country"></h3>
+                <p class="paraclass" id="table5para"></p>
+            </tr>
+            <hr class="lineclass">
+        </table>
+        <!--six table-->
+        <table>
+            <tr>
+                <img class="mediaclass" id="imageid6" height="500px" src="">
+                <video class="mediaclass" id="videoid6" height="500px" src="" style="display: none;" controls autoplay></video>
+            </tr>
+            <tr>
+                <h2 class="titleclass" id="table6title"></h2>
+                <h3 class="countryclass" id="table6country"></h3>
+                <p class="paraclass" id="table6para"></p>
+            </tr>
+            <hr class="lineclass">
+        </table>
+
+        <!--seven table-->
+        <table>
+            <tr>
+                <img class="mediaclass" id="imageid7" height="500px" src="">
+                <video class="mediaclass" id="videoid7" height="500px" src="" style="display: none;" controls autoplay></video>
+            </tr>
+            <tr>
+                <h2 class="titleclass" id="table7title"></h2>
+                <h3 class="countryclass" id="table7country"></h3>
+                <p class="paraclass" id="table7para"></p>
+            </tr>
+            <hr class="lineclass">
+        </table>
+
+       
+
+        <script>
+            function refresh() {
+                let dataarrayindexes = []
+                for (i=0;i<7;i++) {
+                    randarrayindex = Math.floor(Math.random()*dataarray.length)
+                    do {
+                        randarrayindex = Math.floor(Math.random()*dataarray.length)
+                        }
+                     while (dataarrayindexes.includes(randarrayindex))
+                    dataarrayindexes.push(randarrayindex)
+                    }
+                return dataarrayindexes
+            }
+            
+            function loader() {
+            }
+            
+            refresh()
+                
+            image = ["jpg","png","svg","jpeg"]
+            video = ["mp4","m4a"]
+
+            document.getElementById('Postbutton').onclick = function() {
+                        
+                    let url = document.getElementById('URL').value
+                    let title = document.getElementById('Title').value
+                    let country = document.getElementById('Country').value
+                    let desc = document.getElementById('desc').value
+                    if (url!= ' ' && title!= ' ' && country!= ' ' && desc!= ' ' && url!= '' && title!= '' && country!= '' && desc!= ''){
+                        if (image.includes(url.split('.')[1])) {
+                            filetype = "image"
+                        } else if (video.includes(url.split('.')[1])) {
+                            filetype = "video"
+                        } else {
+                            window.alert('your invalid') //change when less sad
+                        }
+                        dataarray.push({url, title, country, desc,filetype})
+                        console.log(dataarray)
+                        // document.getElementsByClassName('input').value = '' 
+                        document.getElementById('URL').value = ""
+                        document.getElementById('Title').value = ""
+                        document.getElementById('Country').value = ""
+                        document.getElementById('desc').value = ""
+                        filetype = ""
+                        }
+                    else {
+                        window.alert('One or more boxes are unfilled!')
+                    }
+                }
+                
+
+            document.getElementById('Refresh').onclick = function() {
+                    dataarrayindexes = refresh()
+                    urlspaces = document.getElementsByClassName("mediaclass")
+                    titlespaces = document.getElementsByClassName("titleclass")
+                    countryspaces = document.getElementsByClassName("countryclass")
+                    paraspaces = document.getElementsByClassName("paraclass")
+                    let imageid
+                    let videoid
+                    for (i=0;i<7;i++) {
+                        let random = dataarray[dataarrayindexes[i]]
+                        const {url, title, country, desc,filetype} = random
+                        imageid = urlspaces[i*2]
+                        videoid = urlspaces[i*2+1]
+                        imageid.src = ""
+                        videoid.src = ""
+                        if (filetype == 'image') {
+                            imageid.src = url
+                            videoid.style.display = "none"
+                        } else {
+                            videoid.src = url
+                            videoid.style.display = "inline"
+                        }
+
+                        titlespaces[i].textContent = title
+                        countryspaces[i].textContent = country
+                        paraspaces[i].textContent = desc
+                        
+                    }
+                    //old system do not use
+                    /*
+                    let random1 = dataarray[dataarrayindexes[watchcount%7]]
+                    watchcount += 1 //del later
+                    const {url, title, country, desc,filetype} = random1
+                    videoid = document.getElementById("videoid1")
+                    imageid = document.getElementById("imageid1")
+                    imageid.src = ""
+                    videoid.src = ""
+                    if (filetype == 'image') {
+                        imageid.src = url
+                        videoid.style.display = "none"
+                    } else {
+                        videoid.src = url
+                        videoid.style.display = "inline"
+                    }
+                    document.getElementById("table1title").textContent = title
+                    document.getElementById("table1country").textContent = country
+                    document.getElementById("table1para").textContent = desc
+                    */
+                }
+
+
+
+            document.getElementById('Searchbutton').onclick = function() {
+                    let searchword = document.getElementById('Search').value;
+                    searchwords = searchword.split(' ')
+                    console.log(searchwords)
+                    console.log(searchwords.length)
+                    let alert = false
+                    const totalresult = []
+                    let indexes = []
+                        for(let i = 0; i < searchwords.length; i++){
+                            if (searchwords[i] != '' && searchwords[i] != ' '){
+                                const results = dataarray.filter(item => {
+                                    let alpha = item.title.includes(searchwords[i]);
+                                    let beta = item.country.includes(searchwords[i]);
+                                    let gamma = item.desc.includes(searchwords[i]);
+                                    console.log('loop ran' + i)
+                                    return alpha || beta || gamma;
+                                
+                            });
+                                console.log(results)
+                                for(let item of results){
+                                    totalresult.push(item);
+                                }
+                            }
+                            else{
+                                alert = true
+                            }
+                            
+                        }
+                    console.log(totalresult)
+                    const nodupe = [... new Set(totalresult)];
+                    console.log(nodupe)
+                        indexes = nodupe.map(item => dataarray.indexOf(item));
+                        // for(i=0; i<nodupe.length; i++){ omd what was i doing
+                        //     indexes.push(i)
+                        // }
+                    
+                        if (alert == true){
+                        window.alert('Your search bar is unfilled!')
+                        }
+                        console.log(indexes) 
+                        
+                        document.getElementById('Search').value = ""
+
+                        //hi charis the indexes here refer to that of dataarray, 
+                        //please make it so that search results are geenrated according to your system ty!!!
+                        
+
+                       
+                };
+            
+                
+        </script>
+
+    </body>
+</html>
+
