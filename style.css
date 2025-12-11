@@ -92,27 +92,26 @@ table:empty {
     display:none;
 }
 
-/* Mini CSS to increase font size for tradition tables */
 .titleclass {
-    font-size: 2.25rem; /* slightly larger than h2 default, prev 1.8 */
+    font-size: 2.25rem; 
     font-weight: bold;
 }
 
 .countryclass {
-    font-size: 1.75rem; /* slightly larger than h3 default, prev 1.4 */
+    font-size: 1.75rem; 
     font-style: italic;
-    color: #25F4EE; /* TikTok-like vibrant accent */
+    color: #25F4EE; 
 }
 
 .paraclass {
-    font-size: 1.4rem; /* slightly larger paragraph text, prev 1.2 */
-    line-height: 1.6; /* improves readability */
+    font-size: 1.4rem; 
+    line-height: 1.6;
     text-align: center;
-    max-width: 100%;        /* sets the "box" width */
+    max-width: 100%;       
     padding-right:50px;
     padding-left:50px;
 }
     
 .mediaclass {
-    height:500px;
+    width:80%;
 }

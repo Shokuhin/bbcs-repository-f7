@@ -23,8 +23,5 @@ console.log(".js file working");
 
 
 
-//source for posts: https://historycollection.com/15-cultural-practices-that-outsiders-couldnt-understand/
-// https://thegoodlifefrance.com/bread-france-cultural-experience/
-// https://www.discovergermany.com/the-secrets-of-german-bread-unveiling-the-craft-behind-germanys-beloved-loaves/
-// https://trip101.com/article/10-interesting-traditions-around-the-world
+//source for posts: c
 
