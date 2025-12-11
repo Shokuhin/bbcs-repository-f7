@@ -10,6 +10,11 @@
 Our website generates 7 random examples of traditions around the world, including an image, a title, its origin country, and a description. After viewing the information shown, users can randomise another 7 examples using the refresh button at the bottom of the page.
 Users can search for specific information by using the search bar at the top. The search function is case-insensitive, and the website outputs up to 7 examples with the keyword in its country name, title, or description.
 Users may also submit examples of their own. The media link provided by the user is checked for format validity and submissions with an accepted image or video format will be acccepted. If a field in the submission is left blank, the submission will be rejected. Otherwise, the submission is pushed to dataarrays in index.js and may appear when the refresh button is pressed.
+
+As a result, users can scroll through posts on traditions all around the globe, fuelling their curiosity and raising awareness about traditions in danger of being lost to time. Not only that, but users may share their own traditions as well! By enabling our heritage to stand against the test of time, we are saving our history and culture from being eroded.
+
+To protect users' health, the 7 post limit restricts screen time.
+
 We also advocate against vaping.
 
 ## AI usage

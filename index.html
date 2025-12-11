@@ -2,7 +2,6 @@
 <html>
     <head>
         <title>OurHeritageArchive</title>
-        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="aesthetic.css">
         <script src="index.js"></script>
     </head>
@@ -11,7 +10,7 @@
         <h1 style='font-size: 50px'>Our Heritage Archive</h1>
         <label>Search</label>
         <input id="Search">
-        <a href="#explore"><button id="Searchbutton" class="btn">Enter</button></a>
+        <button id="Searchbutton" class="btn">Enter</button>
         <!-- <button class="btn"> Share a traditional practice! </button> -->
 
         <!-- <a href="index2.html">
@@ -278,7 +277,7 @@
                 <br>
                 <div class="mid">
                     <label> Description & Fun Facts</label>
-                    <textarea id="desc" class="input" style="height: 100px; width: 400px; padding: 12px; box-sizing: border-box; font:italic"></textarea>
+                    <textarea id="desc" class="input" style="height: 100px; width: 400px; padding: 12px; box-sizing: border-box; font-family: Poppins, sans-serif;"></textarea>
                 </div>
             </div>
             <br>
@@ -504,7 +503,6 @@
                                     let alpha = item.title.toLowerCase().includes(searchwords[i].toLowerCase());
                                     let beta = item.country.toLowerCase().includes(searchwords[i].toLowerCase());
                                     let gamma = item.desc.toLowerCase().includes(searchwords[i].toLowerCase());
-                                    console.log('loop ran' + i)
                                     return alpha || beta || gamma;
                                 
                             });
@@ -528,15 +526,15 @@
                         // }
                     
                         if (alert == true){
-                        window.alert('Your search bar is unfilled!')
+                            window.alert('Your search bar is unfilled!')
+                        } else {
+                            document.getElementById("explore").scrollIntoView()
                         }
                         
-                        document.getElementById('Search').value = ""
-                        
+                    document.getElementById('Search').value = ""
+                    console.log(totalresult)
                     generateoptions(totalresult)
                         
-
-
                         /*
 
                         //testing
@@ -549,8 +547,8 @@
                             content.style.maxHeight = content.scrollHeight + "px"; // expand
                         }
                         });
-                       */
-                };
+                            */
+                    };
                 
         </script>
 

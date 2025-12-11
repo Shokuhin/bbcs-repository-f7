@@ -1,16 +1,12 @@
-/* =========================================================
-   GLOBAL STYLING — DARK + TIKTOK COLOUR SCHEME
-   ========================================================= */
 
 body {
-    background-color: #010101; /* TikTok dark background */
+    background-color: #010101; 
     font-family: "Poppins", sans-serif;
     color: #ffffff;
     margin: 0;
     padding: 0;
 }
 
-/* Smooth fade-in */
 * {
     animation: fadeIn 0.5s ease-in-out;
 }
@@ -20,13 +16,8 @@ body {
 }
 
 
-/* =========================================================
-   BUTTONS — CYAN & PINK ACCENTS
-   ========================================================= */
-
 .btn, button {
-    background: linear-gradient(135deg, #25F4EE, #FE2C55); /* cyan to pink */
-    color: white !important;
+    background: linear-gradient(135deg, #25F4EE, #FE2C55); 
     padding: 12px 18px;
     border-radius: 10px;
     border: none;
@@ -46,11 +37,6 @@ button:active {
     transform: scale(0.96);
 }
 
-
-/* =========================================================
-   INPUTS — DARK BACKGROUND + ACCENT BORDER
-   ========================================================= */
-
 input, textarea, select {
     background-color: #1a1a1a;
     border: 2px solid #25F4EE;
@@ -65,29 +51,23 @@ input, textarea, select {
     box-sizing: border-box;
 }
 
-/* Center-form full width */
+
 .center-form input,
 .center-form textarea,
 .center-form select {
     width: 100%;
 }
 
-/* Search bar fixed size */
 #Search {
     width: 260px;
     max-width: calc(100% - 40px);
 }
 
-/* Focus glow */
+
 input:focus, textarea:focus, select:focus {
     border-color: #0a74e5;
     box-shadow: 0 0 8px rgba(37, 244, 238, 0.35);
 }
-
-
-/* =========================================================
-   THREE-COLUMN PANEL — DARK GLASS
-   ========================================================= */
 
 .three-column {
     padding: 20px;
@@ -98,7 +78,6 @@ input:focus, textarea:focus, select:focus {
     margin: 25px;
 }
 
-/* Image hover */
 .left-form img, 
 .right-form img {
     border-radius: 14px;
@@ -112,10 +91,6 @@ input:focus, textarea:focus, select:focus {
 }
 
 
-/* =========================================================
-   CENTER FORM HEADINGS — TIKTOK GRADIENT
-   ========================================================= */
-
 .center-form {
     background: #111111;
     padding: 25px;
@@ -126,14 +101,9 @@ input:focus, textarea:focus, select:focus {
 .center-form h2,
 .center-form h3 {
     background-image: linear-gradient(135deg, #25F4EE, #FE2C55);
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
-
-
-/* =========================================================
-   TABLE — DARK + COLOURFUL ACCENTS
-   ========================================================= */
 
 table {
     margin-top: 20px;
@@ -162,11 +132,6 @@ table tr:hover td {
     background: #252525;
 }
 
-
-/* =========================================================
-   SCROLLBAR — CYAN-PINK GRADIENT
-   ========================================================= */
-
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -183,4 +148,121 @@ table tr:hover td {
 
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(135deg, #FE2C55, #25F4EE);
+}
+
+body{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+    
+}
+
+.btn {
+            background-color: rgb(176, 193, 244);
+            color: black;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        button:active {
+            background-color: rgb(163, 119, 246);
+        }
+
+.mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+table:empty {
+    display: none;
+}
+
+.sshare{
+     text-align: right;
+}
+
+/* .btn {
+    display: inline-block;
+    margin-left: 
+} */
+.img{
+    float:right;
+    max-width: 20px;
+}
+
+.three-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.center-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    width: 400px;
+    max-width: 500px;
+}
+
+.left-form {
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.right-form {
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* .dropdown button{
+    background-color: white;
+    color: white;
+    padding: 10px 15px;
+    border:none;
+    cursor:pointer;
+
+}
+.dropdown p{
+    display:block;
+    color:black;
+    padding: 10px 15px;
+    
+
+} */
+
+
+.lineclass {
+    display:none;
+}
+
+.titleclass {
+    font-size: 2.25rem; 
+    font-weight: bold;
+}
+
+.countryclass {
+    font-size: 1.75rem; 
+    font-style: italic;
+    color: #25F4EE; 
+}
+
+.paraclass {
+    font-size: 1.4rem; 
+    line-height: 1.6;
+    text-align: center;
+    max-width: 100%;       
+    padding-right:50px;
+    padding-left:50px;
+}
+    
+.mediaclass {
+    width:80%;
 }
