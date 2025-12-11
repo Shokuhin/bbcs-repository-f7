@@ -36,8 +36,7 @@ https://docs.google.com/document/d/1GUoT4DDW-TBHi-H6ymLt7SJuQk-hLD7fjavEALZ-niQ/
 However, our road was certainly not a smooth one. The three of us, inexperienced, faced problems left and right. The first major hurdle was getting to know each other, which took a while to say the least as we were all quite shy. As quickly as we started typing our html code, we whipped out our google searchbars. The first major code-related hurdle was definitely the searchbar, ironoically. IT JUST DIDNT WORK. The second major code-related hurdle was the random generation of the posts. Naturally, we overcame these challenges the way any coder would: Troubleshooting. And more troubleshooting. Having started early, time was not a concern. Nearing the end of our project, we have certainly gained valuable coding skills, strong bonds, and a phobia of error messages. If given the chance to go back in time, we would undoubtedly still choose to go for this hackathon! 
 
 ## Personal comments from members:
-Shaq loves Bryan romantically and im not sure if its a problem
-10min vid showing project setup and all functionality 
+WEEEEEEE
 
 
 
