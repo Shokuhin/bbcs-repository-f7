@@ -13,16 +13,16 @@ Users may also submit examples of their own. The media link provided by the user
 We also advocate against vaping.
 
 ## AI usage
-We used AI for most of the CSS (besides the anti-vaping ads)
-AI was also used as a learning tool, to ask questions. E.g. "is there a function that can..."
-For that one satire post about modern coders, AI was used for the description
-Proudly, AI was **not used** for html and javascript!
+- We used AI for most of the CSS (besides the anti-vaping ads)
+- AI was also used as a learning tool, to ask questions. E.g. "is there a function that can..."
+- For that one satire post about modern coders, AI was used for the description
+- Proudly, AI was **not used** for html and javascript!
 
 ## References for posts:
-https://historycollection.com/15-cultural-practices-that-outsiders-couldnt-understand/
-https://thegoodlifefrance.com/bread-france-cultural-experience/
-https://www.discovergermany.com/the-secrets-of-german-bread-unveiling-the-craft-behind-germanys-beloved-loaves/
-https://trip101.com/article/10-interesting-traditions-around-the-world
+- https://historycollection.com/15-cultural-practices-that-outsiders-couldnt-understand/
+- https://thegoodlifefrance.com/bread-france-cultural-experience/
+- https://www.discovergermany.com/the-secrets-of-german-bread-unveiling-the-craft-behind-germanys-beloved-loaves/
+- https://trip101.com/article/10-interesting-traditions-around-the-world
 
 ## Reference for anti-vaping ads:
 https://www.gov.sg/stopvaping-resources/
