@@ -1,0 +1,186 @@
+/* =========================================================
+   GLOBAL STYLING — DARK + TIKTOK COLOUR SCHEME
+   ========================================================= */
+
+body {
+    background-color: #010101; /* TikTok dark background */
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Smooth fade-in */
+* {
+    animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* =========================================================
+   BUTTONS — CYAN & PINK ACCENTS
+   ========================================================= */
+
+.btn, button {
+    background: linear-gradient(135deg, #25F4EE, #FE2C55); /* cyan to pink */
+    color: white !important;
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0px 4px 10px rgba(37, 244, 238, 0.35);
+    transition: 0.3s ease;
+}
+
+.btn:hover,
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 16px rgba(254, 44, 85, 0.45);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+
+/* =========================================================
+   INPUTS — DARK BACKGROUND + ACCENT BORDER
+   ========================================================= */
+
+input, textarea, select {
+    background-color: #1a1a1a;
+    border: 2px solid #25F4EE;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    outline: none;
+    transition: 0.25s ease;
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Center-form full width */
+.center-form input,
+.center-form textarea,
+.center-form select {
+    width: 100%;
+}
+
+/* Search bar fixed size */
+#Search {
+    width: 260px;
+    max-width: calc(100% - 40px);
+}
+
+/* Focus glow */
+input:focus, textarea:focus, select:focus {
+    border-color: #0a74e5;
+    box-shadow: 0 0 8px rgba(37, 244, 238, 0.35);
+}
+
+
+/* =========================================================
+   THREE-COLUMN PANEL — DARK GLASS
+   ========================================================= */
+
+.three-column {
+    padding: 20px;
+    background: rgba(20, 20, 20, 0.85);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.5);
+    margin: 25px;
+}
+
+/* Image hover */
+.left-form img, 
+.right-form img {
+    border-radius: 14px;
+    box-shadow: 0px 4px 14px rgba(0,0,0,0.6);
+    transition: 0.3s ease;
+}
+
+.left-form img:hover,
+.right-form img:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   CENTER FORM HEADINGS — TIKTOK GRADIENT
+   ========================================================= */
+
+.center-form {
+    background: #111111;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0px 8px 18px rgba(37, 244, 238, 0.2);
+}
+
+.center-form h2,
+.center-form h3 {
+    background-image: linear-gradient(135deg, #25F4EE, #FE2C55);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+/* =========================================================
+   TABLE — DARK + COLOURFUL ACCENTS
+   ========================================================= */
+
+table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(37, 244, 238, 0.25);
+}
+
+table th {
+    background: linear-gradient(135deg, #25F4EE, #FE2C55);
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+table td {
+    background: #1a1a1a;
+    padding: 12px;
+    border-bottom: 1px solid #333;
+}
+
+table tr:hover td {
+    background: #252525;
+}
+
+
+/* =========================================================
+   SCROLLBAR — CYAN-PINK GRADIENT
+   ========================================================= */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111111;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #25F4EE, #FE2C55);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #FE2C55, #25F4EE);
+}

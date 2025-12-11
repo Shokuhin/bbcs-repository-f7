@@ -3,14 +3,15 @@
     <head>
         <title>OurHeritageArchive</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="aesthetic.css">
         <script src="index.js"></script>
     </head>
     <body>
         <!-- <img class="img" src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@2x.png"> -->
-        <h1>Our Heritage Archive</h1>
+        <h1 style='font-size: 50px'>Our Heritage Archive</h1>
         <label>Search</label>
         <input id="Search">
-        <button id="Searchbutton" class="btn">submit</button>
+        <button id="Searchbutton" class="btn">Enter</button>
         <!-- <button class="btn"> Share a traditional practice! </button> -->
 
         <!-- <a href="index2.html">
@@ -20,34 +21,41 @@
     </a> -->
         <hr>
         
-        <!-- <div class= 'dropdown'>
-            <button>Make a post!</button>
-            <div class='content'>
-                <p>test</p>
-
-
-
-            </div>
-        </div> -->
+       
 
         
             <div class="three-column">
                 <div class="left-form">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Jynxzi_ohnePixel_2025_01.png" alt="Left Image">
+                    <img src="https://cdn.discordapp.com/attachments/698934424062132275/1447878043648655370/togif.gif?ex=693b3341&is=6939e1c1&hm=2e8b9665abf39dd814e561424d9498ae1be2f3c34dd39fcd51096ada88dfd835&" alt="Left Image" width="350" height="193" title="Wee Zen im sorry">
                 </div>
                 <div class="center-form">
-            <h2>Share a traditional practice!</h2>
+            <h2 style="font-size: 35px">Share a traditional practice!</h2>
             <div class="divmain">
                 <div class="mid">
                     <label>Image/ShortVideo URL</label>
                     <input id="URL" class="input">
                 </div>
+
+                <!-- <br>
+                
+                <div class ="mid">
+                    <label>Media Type</label>
+                    <select autocomplete="MediaType" id="Type" name="Media type">
+                        <option>Select Media Type</option>
+                        <option value="image">Image</option>
+                        <option value="video">Video</option>
+                    </select> 
+                </div> -->
                 
                 <br>
+            
                 <div class="mid">
                     <label>Title</label>
                     <input id="Title" class="input">
                 </div>
+
+
+
                 <br>
                 <div class="mid">
                     <label>Country of Origin</label>
@@ -260,12 +268,16 @@
                             <option value="Tuvalu">Tuvalu</option>
                             <option value="Vanuatu">Vanuatu</option>
                         </optgroup>
+                        <optgroup label="Others">
+                            <option value="Global">Global</option>
+                            <option value="Country: its complicated">it's complicated</option>
+                        </optgroup>
                     </select>    
                 </div>
                 <br>
                 <div class="mid">
                     <label> Description & Fun Facts</label>
-                    <textarea id="desc" class="input" style="height: 100px; width: 400px; padding: 12px; box-sizing: border-box;"></textarea>
+                    <textarea id="desc" class="input" style="height: 100px; width: 400px; padding: 12px; box-sizing: border-box; font:italic"></textarea>
                 </div>
             </div>
             <br>
@@ -278,9 +290,7 @@
             </div>
             <hr>
             
-        <h2>Explore traditions all over the world!</h2> 
-        <button id="Refresh" class="btn">Refresh</button>
-        <br> <br>
+        <h2 id="explore" style='font-size: 45px;'>Explore traditions all over the world!</h2> 
 
         <!--first table-->
         <table>
@@ -379,29 +389,63 @@
             <hr class="lineclass">
         </table>
 
-       
+       <a href="#explore"><button id="Refresh" class="btn">Refresh</button></a>
+        <br> <br>
 
         <script>
-            function refresh() {
+            function generateoptions(arrayoptions = dataarray) {
                 let dataarrayindexes = []
-                for (i=0;i<7;i++) {
-                    randarrayindex = Math.floor(Math.random()*dataarray.length)
+                let randarrayindex
+                for (let i=0;i<Math.min(7,arrayoptions.length);i++) {
+                    randarrayindex = Math.floor(Math.random()*arrayoptions.length)
                     do {
-                        randarrayindex = Math.floor(Math.random()*dataarray.length)
+                        randarrayindex = Math.floor(Math.random()*arrayoptions.length)
                         }
                      while (dataarrayindexes.includes(randarrayindex))
                     dataarrayindexes.push(randarrayindex)
+                }
+                urlspaces = document.getElementsByClassName("mediaclass")
+                titlespaces = document.getElementsByClassName("titleclass")
+                countryspaces = document.getElementsByClassName("countryclass")
+                paraspaces = document.getElementsByClassName("paraclass")
+                linespaces = document.getElementsByClassName("lineclass")
+                let imageid
+                let videoid
+                for (let i=0;i<7;i++) { //empty the spaces for each table
+                    urlspaces[i*2].src = ""
+                    urlspaces[i*2+1].src = ""
+                    urlspaces[i*2+1].style.display = "none"
+                    titlespaces[i].textContent = ""
+                    countryspaces[i].textContent = ""
+                    paraspaces[i].textContent = ""
+                    linespaces[i].style.display="none"
+                }
+                for (let i=0;i<dataarrayindexes.length;i++) {
+                    linespaces[i].style.display="block"
+                    let random = arrayoptions[dataarrayindexes[i]]
+                    let {url, title, country, desc, filetype} = random
+                    imageid = urlspaces[i*2]
+                    videoid = urlspaces[i*2+1]
+
+                    if (filetype == 'image') {
+                        imageid.src = url
+                    } else {
+                        videoid.src = url
+                        videoid.style.display = "inline"
                     }
-                return dataarrayindexes
+
+                    titlespaces[i].textContent = title
+                    countryspaces[i].textContent = country
+                    paraspaces[i].textContent = desc
+                    
+                }
             }
             
-            function loader() {
-            }
             
-            refresh()
+            generateoptions()
                 
-            image = ["jpg","png","svg","jpeg"]
-            video = ["mp4","m4a"]
+            let image = ["jpg","png","svg","jpeg"]
+            let video = ["mp4","m4a"]
 
             document.getElementById('Postbutton').onclick = function() {
                         
@@ -409,13 +453,17 @@
                     let title = document.getElementById('Title').value
                     let country = document.getElementById('Country').value
                     let desc = document.getElementById('desc').value
+                    // let type = document.getElementById('Type').value
                     if (url!= ' ' && title!= ' ' && country!= ' ' && desc!= ' ' && url!= '' && title!= '' && country!= '' && desc!= ''){
-                        if (image.includes(url.split('.')[1])) {
+                        let breakurl = url.split('.')
+                        console.log(breakurl[breakurl.length-1])
+                        if (image.includes(breakurl[breakurl.length-1])) {
                             filetype = "image"
-                        } else if (video.includes(url.split('.')[1])) {
+                        } else if (video.includes(breakurl[breakurl-1])) {
                             filetype = "video"
                         } else {
-                            window.alert('your invalid') //change when less sad
+                            window.alert('The file format is invalid')
+                            return
                         }
                         dataarray.push({url, title, country, desc,filetype})
                         console.log(dataarray)
@@ -433,53 +481,8 @@
                 
 
             document.getElementById('Refresh').onclick = function() {
-                    dataarrayindexes = refresh()
-                    urlspaces = document.getElementsByClassName("mediaclass")
-                    titlespaces = document.getElementsByClassName("titleclass")
-                    countryspaces = document.getElementsByClassName("countryclass")
-                    paraspaces = document.getElementsByClassName("paraclass")
-                    let imageid
-                    let videoid
-                    for (i=0;i<7;i++) {
-                        let random = dataarray[dataarrayindexes[i]]
-                        const {url, title, country, desc,filetype} = random
-                        imageid = urlspaces[i*2]
-                        videoid = urlspaces[i*2+1]
-                        imageid.src = ""
-                        videoid.src = ""
-                        if (filetype == 'image') {
-                            imageid.src = url
-                            videoid.style.display = "none"
-                        } else {
-                            videoid.src = url
-                            videoid.style.display = "inline"
-                        }
+                    generateoptions()
 
-                        titlespaces[i].textContent = title
-                        countryspaces[i].textContent = country
-                        paraspaces[i].textContent = desc
-                        
-                    }
-                    //old system do not use
-                    /*
-                    let random1 = dataarray[dataarrayindexes[watchcount%7]]
-                    watchcount += 1 //del later
-                    const {url, title, country, desc,filetype} = random1
-                    videoid = document.getElementById("videoid1")
-                    imageid = document.getElementById("imageid1")
-                    imageid.src = ""
-                    videoid.src = ""
-                    if (filetype == 'image') {
-                        imageid.src = url
-                        videoid.style.display = "none"
-                    } else {
-                        videoid.src = url
-                        videoid.style.display = "inline"
-                    }
-                    document.getElementById("table1title").textContent = title
-                    document.getElementById("table1country").textContent = country
-                    document.getElementById("table1para").textContent = desc
-                    */
                 }
 
 
@@ -495,9 +498,9 @@
                         for(let i = 0; i < searchwords.length; i++){
                             if (searchwords[i] != '' && searchwords[i] != ' '){
                                 const results = dataarray.filter(item => {
-                                    let alpha = item.title.includes(searchwords[i]);
-                                    let beta = item.country.includes(searchwords[i]);
-                                    let gamma = item.desc.includes(searchwords[i]);
+                                    let alpha = item.title.toLowerCase().includes(searchwords[i].toLowerCase());
+                                    let beta = item.country.toLowerCase().includes(searchwords[i].toLowerCase());
+                                    let gamma = item.desc.toLowerCase().includes(searchwords[i].toLowerCase());
                                     console.log('loop ran' + i)
                                     return alpha || beta || gamma;
                                 
@@ -512,10 +515,11 @@
                             }
                             
                         }
-                    console.log(totalresult)
+
                     const nodupe = [... new Set(totalresult)];
                     console.log(nodupe)
-                        indexes = nodupe.map(item => dataarray.indexOf(item));
+                    
+                        // indexes = nodupe.map(item => dataarray.indexOf(item));
                         // for(i=0; i<nodupe.length; i++){ omd what was i doing
                         //     indexes.push(i)
                         // }
@@ -523,17 +527,27 @@
                         if (alert == true){
                         window.alert('Your search bar is unfilled!')
                         }
-                        console.log(indexes) 
                         
                         document.getElementById('Search').value = ""
-
-                        //hi charis the indexes here refer to that of dataarray, 
-                        //please make it so that search results are geenrated according to your system ty!!!
+                        
+                    generateoptions(totalresult)
                         
 
-                       
+
+                        /*
+
+                        //testing
+                        document.querySelector('.dropdown-btn').addEventListener('click', function () {
+                        const content = document.querySelector('.dropdown-content');
+                        
+                        if (content.style.maxHeight) {
+                            content.style.maxHeight = null; // collapse
+                        } else {
+                            content.style.maxHeight = content.scrollHeight + "px"; // expand
+                        }
+                        });
+                       */
                 };
-            
                 
         </script>
 
