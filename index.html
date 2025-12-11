@@ -282,7 +282,7 @@
             </div>
             <br>
             
-            <button id="Postbutton" class="btn">submit</button>
+            <button id="Postbutton" class="btn">Submit</button>
              </div>
              <div class="right-form">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Jynxzi_ohnePixel_2025_01.png" alt="Right Image">
@@ -444,8 +444,8 @@
             
             generateoptions()
                 
-            let image = ["jpg","png","svg","jpeg"]
-            let video = ["mp4","m4a"]
+            let image = ["jpg","png","svg","jpeg","gif","webp","ico","apng","cur","pjp"]
+            let video = ["mp4","m4a","mov","ogg"]
 
             document.getElementById('Postbutton').onclick = function() {
                         
@@ -456,16 +456,17 @@
                     // let type = document.getElementById('Type').value
                     if (url!= ' ' && title!= ' ' && country!= ' ' && desc!= ' ' && url!= '' && title!= '' && country!= '' && desc!= ''){
                         let breakurl = url.split('.')
-                        console.log(breakurl[breakurl.length-1])
-                        if (image.includes(breakurl[breakurl.length-1])) {
+                        extension = breakurl[breakurl.length-1].toLowerCase()
+                        console.log(extension,video,image)
+                        if (image.includes(extension)) {
                             filetype = "image"
-                        } else if (video.includes(breakurl[breakurl-1])) {
+                            dataarray.push({url, title, country, desc,filetype})
+                        } else if (video.includes(extension)) {
                             filetype = "video"
+                            dataarray.push({url, title, country, desc,filetype})
                         } else {
                             window.alert('The file format is invalid')
-                            return
                         }
-                        dataarray.push({url, title, country, desc,filetype})
                         console.log(dataarray)
                         // document.getElementsByClassName('input').value = '' 
                         document.getElementById('URL').value = ""

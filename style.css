@@ -109,7 +109,10 @@ table:empty {
     line-height: 1.6; /* improves readability */
     text-align: center;
     max-width: 100%;        /* sets the "box" width */
+    padding-right:50px;
+    padding-left:50px;
 }
     
-
-
+.mediaclass {
+    height:500px;
+}
