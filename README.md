@@ -1,4 +1,4 @@
-# My Heritage Archive
+# Our Heritage Archive
 
 ## To Run:
 ### Option 1
