@@ -5,7 +5,7 @@
 1. Click on the github pages link
 2. Enjoy the site!
 ### Option 2
-1. Open vscode
+1. Open vscode with repository cloned
 2. right-click on index.html
 3. click "open with live server"
 4. Enjoy the site!
