@@ -1,11 +1,16 @@
-### My Heritage Archive
+# My Heritage Archive
 
 ## To Run:
+### Option 1
+1. Click on the github pages link
+2. Enjoy the site!
+### Option 2
 1. Open vscode
 2. right-click on index.html
 3. click "open with live server"
 4. Enjoy the site!
-5. Note: File format must end with "jpg" ,"png" ,"svg" ,"jpeg" ,"gif" ,"webp" ,"ico" ,"apng" ,"cur" , or "pjp" for images, and "mp4" ,"m4a" ,"mov" , or "ogg" for videos.
+
+Note: File format must end with "jpg" ,"png" ,"svg" ,"jpeg" ,"gif" ,"webp" ,"ico" ,"apng" ,"cur" , or "pjp" for images, and "mp4" ,"m4a" ,"mov" , or "ogg" for videos.
 
 ## Functionalities + explanation of code
 Our website generates 7 random examples of traditions around the world, including an image, a title, its origin country, and a description. After viewing the information shown, users can randomise another 7 examples using the refresh button at the bottom of the page.
