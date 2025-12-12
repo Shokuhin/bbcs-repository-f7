@@ -449,11 +449,12 @@
             let video = ["mp4","m4a","mov","ogg"]
 
             document.getElementById('Postbutton').onclick = function() {
-                        
+                    let deleted = true  
                     let url = document.getElementById('URL').value
                     let title = document.getElementById('Title').value
                     let country = document.getElementById('Country').value
                     let desc = document.getElementById('desc').value
+                    
                     // let type = document.getElementById('Type').value
                     if (url!= ' ' && title!= ' ' && country!= ' ' && desc!= ' ' && url!= '' && title!= '' && country!= '' && desc!= ''){
                         let breakurl = url.split('.')
@@ -466,15 +467,22 @@
                             filetype = "video"
                             dataarray.push({url, title, country, desc,filetype})
                         } else {
-                            window.alert('The file format is invalid')
+                            window.alert('The file format is invalid. File format must end with "jpg" ,"png" ,"svg" ,"jpeg" ,"gif" ,"webp" ,"ico" ,"apng" ,"cur" , or "pjp" for images, and "mp4" ,"m4a" ,"mov" , or "ogg" for videos.')
+                            deleted = false
                         }
                         console.log(dataarray)
                         // document.getElementsByClassName('input').value = '' 
-                        document.getElementById('URL').value = ""
-                        document.getElementById('Title').value = ""
-                        document.getElementById('Country').value = ""
-                        document.getElementById('desc').value = ""
-                        filetype = ""
+                            if (deleted == true){
+                                document.getElementById('URL').value = ""
+                                document.getElementById('Title').value = ""
+                                document.getElementById('Country').value = ""
+                                document.getElementById('desc').value = ""
+                                filetype = ""
+                            }
+                            else {
+                                document.getElementById('URL').value = ""
+                                filetype = ""
+                            }
                         }
                     else {
                         window.alert('One or more boxes are unfilled!')
@@ -518,7 +526,7 @@
                         }
 
                     const nodupe = [... new Set(totalresult)];
-                    console.log(nodupe)
+                    console.log(nodupe + 'nodupe')
                     
                         // indexes = nodupe.map(item => dataarray.indexOf(item));
                         // for(i=0; i<nodupe.length; i++){ omd what was i doing
@@ -532,8 +540,8 @@
                         }
                         
                     document.getElementById('Search').value = ""
-                    console.log(totalresult)
-                    generateoptions(totalresult)
+                    console.log(totalresult + 'withdupe')
+                    generateoptions(nodupe)
                         
                         /*
 
